@@ -1,0 +1,95 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+    color: #3ab4b1;
+}
+
+h2 {
+    color: #b8e200;
+    margin-bottom: 0%;
+}
+
+h2 > p {
+    margin-top: 0%;
+}
+
+h3, span {
+    color: white;
+}
+
+.pricegrid {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 325px 325px;
+    justify-content: center;
+    align-content: center;
+}
+
+.Header, .Subscription, .Why-us {
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 1.25;
+}
+
+.Header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    font-size: 105%;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5%;
+}
+
+.Subscription, .Why-us {
+    grid-row: 2;
+    padding: 5% 0% 5% 10%;
+    color: #bfeae9;
+}
+
+.Subscription {
+    background-color: #3ab4b1;
+    border-bottom-left-radius: 10px;
+    }
+
+.Why-us {
+    background-color: #4bc5c2;
+    border-bottom-right-radius: 10px;
+}
+
+.button {
+    background-color: #b8e200;
+    color: white;
+    font-size: 100%;
+    border-radius: 5%;
+    border: none;
+    margin-top: 5%;
+    padding: 5% 30%;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {                     
+    font-size: 106%;
+}
+
+@media only screen and (max-width: 699px) {
+    .pricegrid {
+        padding-top: 0;
+        font-size: 85%;
+        grid-template-columns: 325px;
+    }
+    .Header {
+        grid-column: 1;
+        font-size: 85%;
+    }
+    .Subscription {
+        border-bottom-left-radius: 0px;
+    }
+    .Why-us {
+        grid-row: 3;
+        border-bottom-left-radius: 10px;
+    }
+}
+
