@@ -74,6 +74,14 @@ h3, span {
     font-size: 106%;
 }
 
+footer > p {
+    padding: 5% 5% 0% 0%;
+    font-size: x-small;
+    text-align: center;
+    color: #3ab4b1;
+
+}
+
 @media only screen and (max-width: 699px) {
     .pricegrid {
         padding-top: 0;
